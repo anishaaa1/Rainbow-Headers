@@ -26,38 +26,38 @@
 	font-weight: 600;
 }
 /* Header 4 */
-[data-rem-tags~="Header 4"] .rem-container {
+[data-rem-tags~="header-4"] .rem-container {
 	--line-height: 24px;
 }
-[data-rem-tags~="Header 4"] .rem-text {
+[data-rem-tags~="header-4"] .rem-text {
 	font-size: 1.38rem;
 	font-weight: 550;
 }
-.dark [data-rem-tags~="Header 4"] .rem-text {
+.dark [data-rem-tags~="header-4"] .rem-text {
 	font-size: 1.38rem;
 	font-weight: 550;
 }
 /* Header 5 */
-[data-rem-tags~="Header 5"] .rem-container {
+[data-rem-tags~="header-5"] .rem-container {
 	--line-height: 20px;
 }
-[data-rem-tags~="Header 5"] .rem-text {
+[data-rem-tags~="header-5"] .rem-text {
 	font-size: 1.22em;
 	font-weight: 550;
 }
-.dark [data-rem-tags~="Header 5"] .rem-text {
+.dark [data-rem-tags~="header-5"] .rem-text {
 	font-size: 1.22em;
 	font-weight: 550;
 }
 /* Header 6 */
-[data-rem-tags~="Header 6"] .rem-container {
+[data-rem-tags~="header-6"] .rem-container {
 	--line-height: 16px;
 }
-[data-rem-tags~="Header 6"] .rem-text {
+[data-rem-tags~="header-6"] .rem-text {
 	font-size: 1.08rem;
 	font-weight: 550;
 }
-.dark [data-rem-tags~="Header 6"] .rem-text {
+.dark [data-rem-tags~="header-6"] .rem-text {
 	font-size: 1.08rem;
 	font-weight: 550;
 }
