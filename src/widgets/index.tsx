@@ -1,5 +1,15 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
 
+export const [
+  HEADER4,
+  HEADER5,
+  HEADER6,
+] = [
+  "header4",
+  "header5",
+  "header6",
+];
+
 /**
  * Simple example snippet plugin which shows how to:
  * - Register style settings
@@ -204,24 +214,18 @@ async function onActivate(plugin: ReactRNPlugin) {
 });
 
 // Powerups
+await plugin.app.registerPowerup("Header 4", HEADER4, "Header 4", { slots: [] });
+await plugin.app.registerPowerup("Header 5", HEADER5, "Header 5", { slots: [] });
+await plugin.app.registerPowerup("Header 6", HEADER6, "Header 6", { slots: [] });
+
+
   // Header 4 Powerup
   await plugin.app.registerCommand({
     id: "header4",
     name: "Header 4",
     action: async () => {
-      const focusedRem = await plugin.focus.getFocusedRem();
-      if (!focusedRem) {
-        return;
-      }
-      let tag = await plugin.rem.findByName(["Header 4"], null);
-      if (!tag) {
-        tag = await plugin.rem.createRem();
-        if (!tag) {
-          return;
-        }
-        await tag.setText(["Header 4"]);
-      }
-      await focusedRem.addTag(tag);
+      const rem = await plugin.focus.getFocusedRem();
+      await rem?.addPowerup(HEADER4);
     },
   });
 
@@ -230,19 +234,8 @@ await plugin.app.registerCommand({
   id: "header5",
   name: "Header 5",
   action: async () => {
-    const focusedRem = await plugin.focus.getFocusedRem();
-    if (!focusedRem) {
-      return;
-    }
-    let tag = await plugin.rem.findByName(["Header 5"], null);
-    if (!tag) {
-      tag = await plugin.rem.createRem();
-      if (!tag) {
-        return;
-      }
-      await tag.setText(["Header 5"]);
-    }
-    await focusedRem.addTag(tag);
+    const rem = await plugin.focus.getFocusedRem();
+    await rem?.addPowerup(HEADER5);
     },
   });
 
@@ -251,19 +244,8 @@ await plugin.app.registerCommand({
   id: "header6",
   name: "Header 6",
   action: async () => {
-    const focusedRem = await plugin.focus.getFocusedRem();
-    if (!focusedRem) {
-      return;
-    }
-    let tag = await plugin.rem.findByName(["Header 6"], null);
-    if (!tag) {
-      tag = await plugin.rem.createRem();
-      if (!tag) {
-        return;
-      }
-      await tag.setText(["Header 6"]);
-    }
-    await focusedRem.addTag(tag);
+    const rem = await plugin.focus.getFocusedRem();
+    await rem?.addPowerup(HEADER6);
     },
   });
 }
