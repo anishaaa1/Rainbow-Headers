@@ -5,9 +5,9 @@ export const [
   HEADER5,
   HEADER6,
 ] = [
-  "header4",
-  "header5",
-  "header6",
+  "header-4",
+  "header-5",
+  "header-6",
 ];
 
 /**
@@ -129,7 +129,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h4 = await reactivePlugin.settings.getSetting("h4");
     await reactivePlugin.app.registerCSS(
       "h4",
-      `[data-rem-tags~="Header-4"] .rem-text { color: ${h4}; }`
+      `[data-rem-tags~="header-4"] .rem-text { color: ${h4}; }`
     );
   });
 
@@ -145,7 +145,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h4d = await reactivePlugin.settings.getSetting("h4d");
     await reactivePlugin.app.registerCSS(
       "h4d",
-      `.dark [data-rem-tags~="Header-4"] .rem-text { color: ${h4d}!important; }`
+      `.dark [data-rem-tags~="header-4"] .rem-text { color: ${h4d}!important; }`
     );
   });
 
@@ -161,7 +161,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h5 = await reactivePlugin.settings.getSetting("h5");
     await reactivePlugin.app.registerCSS(
       "h5",
-      `[data-rem-tags~="Header-5"] .rem-text { color: ${h5}; }`
+      `[data-rem-tags~="header-5"] .rem-text { color: ${h5}; }`
     );
   });
 
@@ -177,7 +177,7 @@ async function onActivate(plugin: ReactRNPlugin) {
       const h5d = await reactivePlugin.settings.getSetting("h5d");
       await reactivePlugin.app.registerCSS(
         "h5d",
-        `.dark [data-rem-tags~="Header-5"] .rem-text { color: ${h5d}!important; }`
+        `.dark [data-rem-tags~="header-5"] .rem-text { color: ${h5d}!important; }`
     );
   });
 
@@ -193,7 +193,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h6 = await reactivePlugin.settings.getSetting("h6");
     await reactivePlugin.app.registerCSS(
       "h6",
-      `[data-rem-tags~="Header-6"] .rem-text { color: ${h6}; }`
+      `[data-rem-tags~="header-6"] .rem-text { color: ${h6}; }`
   );
 });
 
@@ -209,7 +209,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h6d = await reactivePlugin.settings.getSetting("h6d");
     await reactivePlugin.app.registerCSS(
       "h6d",
-      `.dark [data-rem-tags~="Header-6"] .rem-text { color: ${h6d}!important; }`
+      `.dark [data-rem-tags~="header-6"] .rem-text { color: ${h6d}!important; }`
   );
 });
 
