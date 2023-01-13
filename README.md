@@ -1,9 +1,15 @@
 # Rainbow Headers
 
-This Snippet allows you to color your headers, as well as creates 3 additional headers, which can also be colored.
+Make your headers colorful and fun! This snippet allows you to colorize your headers. It also gives you 3 new header sizes to play with - Header 4, Header 5, and Header 6.
 
-## Usage
+## Additional Header Tags
+- `Header 4`
+- `Header 5`
+- `Header 6`
 
-<!-- TODO: Describe usage -->
+## How to Use
+- Tag a rem with `##Header 4`, or
+- Use the / command like so: `/Header 4` (or `//Header 4`).
 
-<!-- ignore-after -->
+## Preview
+<img src="src/images/minimal-indent-lines.png">
