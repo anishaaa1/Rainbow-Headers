@@ -11,7 +11,7 @@ import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
  * - The Rem will be styled with the CSS defined in the plugin
  */
 async function onActivate(plugin: ReactRNPlugin) {
-  // Header 1 | Light Mode
+// Header 1 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h1",
     title: "Header 1 | Light Mode (hex)",
@@ -25,9 +25,8 @@ async function onActivate(plugin: ReactRNPlugin) {
       "h1",
       `.rn-editor__rem__body__text--h1:not(.document-title) { color: ${h1}!important; }`
     );
-  });
+});
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 1 | Dark Mode
   await plugin.settings.registerStringSetting({
     id: "h1d",
@@ -44,7 +43,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 2 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h2",
@@ -61,7 +59,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 2 | Dark Mode
   await plugin.settings.registerStringSetting({
     id: "h2d",
@@ -78,7 +75,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 3 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h3",
@@ -95,13 +91,12 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
-  // Header 3 | Dark Mode
-  await plugin.settings.registerStringSetting({
-    id: "h3d",
-    title: "Header 3 | Dark Mode (hex)",
-    description: "Provide a hex color for Header 3 in Dark Mode.",
-    defaultValue: "#83BCFF",
+// Header 3 | Dark Mode
+    await plugin.settings.registerStringSetting({
+      id: "h3d",
+      title: "Header 3 | Dark Mode (hex)",
+      description: "Provide a hex color for Header 3 in Dark Mode.",
+      defaultValue: "#83BCFF",
   });
 
   plugin.track(async (reactivePlugin) => {
@@ -112,7 +107,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 4 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h4",
@@ -129,7 +123,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 4 | Dark Mode
   await plugin.settings.registerStringSetting({
     id: "h4d",
@@ -142,11 +135,10 @@ async function onActivate(plugin: ReactRNPlugin) {
     const h4d = await reactivePlugin.settings.getSetting("h4d");
     await reactivePlugin.app.registerCSS(
       "h4d",
-      `.dark [data-rem-tags~="Header 4"] .rem-text { color: ${h4d}; }`
+      `.dark [data-rem-tags~="Header 4"] .rem-text { color: ${h4d}!important; }`
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 5 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h5",
@@ -163,24 +155,22 @@ async function onActivate(plugin: ReactRNPlugin) {
     );
   });
 
-  async function onActivate(plugin: ReactRNPlugin) {
   // Header 5 | Dark Mode
-  await plugin.settings.registerStringSetting({
-    id: "h5d",
-    title: "Header 5 | Dark Mode (hex)",
-    description: "Provide a hex color for Header 5 in Dark Mode.",
-    defaultValue: "#B0F2B4",
+    await plugin.settings.registerStringSetting({
+      id: "h5d",
+      title: "Header 5 | Dark Mode (hex)",
+      description: "Provide a hex color for Header 5 in Dark Mode.",
+      defaultValue: "#B0F2B4",
   });
 
-  plugin.track(async (reactivePlugin) => {
-    const h5d = await reactivePlugin.settings.getSetting("h5d");
-    await reactivePlugin.app.registerCSS(
-      "h5d",
-      `.dark [data-rem-tags~="Header 5"] .rem-text { color: ${h5d}; }`
+    plugin.track(async (reactivePlugin) => {
+      const h5d = await reactivePlugin.settings.getSetting("h5d");
+      await reactivePlugin.app.registerCSS(
+        "h5d",
+        `.dark [data-rem-tags~="Header 5"] .rem-text { color: ${h5d}!important; }`
     );
   });
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 6 | Light Mode
   await plugin.settings.registerStringSetting({
     id: "h6",
@@ -194,25 +184,24 @@ async function onActivate(plugin: ReactRNPlugin) {
     await reactivePlugin.app.registerCSS(
       "h6",
       `[data-rem-tags~="Header 6"] .rem-text { color: ${h6}; }`
-    );
-  });
+  );
+});
 
-async function onActivate(plugin: ReactRNPlugin) {
   // Header 6 | Dark Mode
   await plugin.settings.registerStringSetting({
     id: "h6d",
     title: "Header 6 | Dark Mode (hex)",
     description: "Provide a hex color for Header 6 in Dark Mode.",
     defaultValue: "#FDE690",
-  });
+});
 
   plugin.track(async (reactivePlugin) => {
     const h6d = await reactivePlugin.settings.getSetting("h6d");
     await reactivePlugin.app.registerCSS(
       "h6d",
-      `.dark [data-rem-tags~="Header 6"] .rem-text { color: ${h6d}; }`
-    );
-  });
+      `.dark [data-rem-tags~="Header 6"] .rem-text { color: ${h6d}!important; }`
+  );
+});
 
 // Powerups
   // Header 4 Powerup
@@ -235,7 +224,6 @@ async function onActivate(plugin: ReactRNPlugin) {
       await focusedRem.addTag(tag);
     },
   });
-}
 
 // Header 5 Powerup
 await plugin.app.registerCommand({
@@ -255,9 +243,8 @@ await plugin.app.registerCommand({
       await tag.setText(["Header 5"]);
     }
     await focusedRem.addTag(tag);
-  },
-});
-}
+    },
+  });
 
 // Header 6 Powerup
 await plugin.app.registerCommand({
@@ -277,8 +264,8 @@ await plugin.app.registerCommand({
       await tag.setText(["Header 6"]);
     }
     await focusedRem.addTag(tag);
-  },
-});
+    },
+  });
 }
 
 async function onDeactivate(_: ReactRNPlugin) {}
