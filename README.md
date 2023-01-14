@@ -12,4 +12,4 @@ Make your headers colorful and fun! This snippet allows you to colorize your hea
 - Use the / command like so: `/Header 4` (or `//Header 4`).
 
 ## Preview
-![Preview 1](https://raw.githubusercontent.com/anishaaa1/Rainbow-Headers/main/src/images/rainbow-headers.png)
+![Preview 1](https://raw.githubusercontent.com/anishaaa1/Rainbow-Headers/main/src/media/rainbow-headers.png)
