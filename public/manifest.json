@@ -1,7 +1,7 @@
 {
   "author": "Anisha",
   "name": "Rainbow Headers",
-  "description": "This Snippet allows you to color your headers, as well as creates 3 additional headers, which can also be colored.",
+  "description": "Allows you to add color to your headers, and gives you 3 additional header sizes to work with.",
   "enableOnMobile": true,
   "id": "Anisha-RainbowHeaders",
   "repoUrl": "https://github.com/anishaaa1/Rainbow-Headers",
@@ -9,7 +9,7 @@
   "version": {
     "major": 0,
     "minor": 0,
-    "patch": 2
+    "patch": 3
   },
   "requestNative": false,
   "requiredScopes": [
