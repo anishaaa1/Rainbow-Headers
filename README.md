@@ -1,6 +1,6 @@
 # Rainbow Headers
 
-Make your headers colorful and fun! This snippet allows you to colorize your headers. It also gives you 3 new header sizes to play with - Header 4, Header 5, and Header 6.
+Make your headers colorful and fun! This snippet allows you to add color to your headers. It also gives you 3 new header sizes to work with - Header 4, Header 5, and Header 6.
 
 ## Additional Header Tags
 - `Header 4`
