@@ -10,16 +10,6 @@ export const [
   "header-6",
 ];
 
-/**
- * Simple example snippet plugin which shows how to:
- * - Register style settings
- * - Register Custom CSS
- * - Register a command
- *
- * How to Use:
- * - Tag a Rem with ##Plugin Style, or use the /Add Plugin Style command on a Rem
- * - The Rem will be styled with the CSS defined in the plugin
- */
 async function onActivate(plugin: ReactRNPlugin) {
 // Header 1 | Light Mode
   await plugin.settings.registerStringSetting({
@@ -225,7 +215,14 @@ await plugin.app.registerPowerup("Header 6", HEADER6, "Header 6", { slots: [] })
     name: "Header 4",
     action: async () => {
       const rem = await plugin.focus.getFocusedRem();
-      await rem?.addPowerup(HEADER4);
+
+      if (rem?.hasPowerup) {
+        rem?.removePowerup(HEADER5);
+        rem?.removePowerup(HEADER6);
+        await rem?.addPowerup(HEADER4);
+      } else {
+        await rem?.addPowerup(HEADER4);
+      }
     },
   });
 
@@ -235,7 +232,14 @@ await plugin.app.registerCommand({
   name: "Header 5",
   action: async () => {
     const rem = await plugin.focus.getFocusedRem();
-    await rem?.addPowerup(HEADER5);
+
+    if (rem?.hasPowerup) {
+      rem?.removePowerup(HEADER4);
+      rem?.removePowerup(HEADER6);
+      await rem?.addPowerup(HEADER5);
+    } else {
+      await rem?.addPowerup(HEADER5);
+    }
     },
   });
 
@@ -245,7 +249,14 @@ await plugin.app.registerCommand({
   name: "Header 6",
   action: async () => {
     const rem = await plugin.focus.getFocusedRem();
-    await rem?.addPowerup(HEADER6);
+
+    if (rem?.hasPowerup) {
+      rem?.removePowerup(HEADER4);
+      rem?.removePowerup(HEADER5);
+      await rem?.addPowerup(HEADER6);
+    } else {
+      await rem?.addPowerup(HEADER6);
+    }
     },
   });
 }
