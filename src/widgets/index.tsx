@@ -211,24 +211,26 @@ await plugin.app.registerPowerup("Header 6", HEADER6, "Header 6", { slots: [] })
 
   // Header 4 Powerup
   await plugin.app.registerCommand({
-    id: "header4",
-    name: "Header 4",
-    action: async () => {
-      const rem = await plugin.focus.getFocusedRem();
+		id: "header4",
+		quickCode: "h4",
+		name: "Header 4",
+		action: async () => {
+			const rem = await plugin.focus.getFocusedRem();
 
-      if (rem?.hasPowerup) {
-        rem?.removePowerup(HEADER5);
-        rem?.removePowerup(HEADER6);
-        await rem?.addPowerup(HEADER4);
-      } else {
-        await rem?.addPowerup(HEADER4);
-      }
-    },
+			if (rem?.hasPowerup) {
+				rem?.removePowerup(HEADER5);
+				rem?.removePowerup(HEADER6);
+				await rem?.addPowerup(HEADER4);
+			} else {
+				await rem?.addPowerup(HEADER4);
+			}
+		},
   });
 
 // Header 5 Powerup
 await plugin.app.registerCommand({
   id: "header5",
+  quickCode: "h5",
   name: "Header 5",
   action: async () => {
     const rem = await plugin.focus.getFocusedRem();
@@ -246,6 +248,7 @@ await plugin.app.registerCommand({
 // Header 6 Powerup
 await plugin.app.registerCommand({
   id: "header6",
+  quickCode: "h6",
   name: "Header 6",
   action: async () => {
     const rem = await plugin.focus.getFocusedRem();
