@@ -3,10 +3,10 @@
 Make your headers colorful and fun! This snippet allows you to add color to your headers. It also gives you 3 new header sizes to work with - Header 4, Header 5, and Header 6.
 
 ## Additional Header Tags
-- `Header 4` or simply `h4`
-- `Header 5` or simply `h5`
-- `Header 6` or simply `h5`
-⚡️ Credit for quickcodes addition to @coldenate
+- `Header 4` _or simply_ `h4`
+- `Header 5` _or simply_ `h5`
+- `Header 6` _or simply_ `h5`
+<br><br>⚡️ Credit for quickcodes addition to `@coldenate` ⚡️
 
 ## Default Colors
 | Header # | Hex Code |
