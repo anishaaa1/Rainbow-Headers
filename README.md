@@ -3,9 +3,10 @@
 Make your headers colorful and fun! This snippet allows you to add color to your headers. It also gives you 3 new header sizes to work with - Header 4, Header 5, and Header 6.
 
 ## Additional Header Tags
-- `Header 4`
-- `Header 5`
-- `Header 6`
+- `Header 4` or simply `h4`
+- `Header 5` or simply `h5`
+- `Header 6` or simply `h5`
+⚡️ Credit for quickcodes addition to @coldenate
 
 ## Default Colors
 | Header # | Hex Code |
@@ -18,8 +19,8 @@ Make your headers colorful and fun! This snippet allows you to add color to your
 | Header 6 | `#FDE690` |
 
 ## How to Use
-- Tag a rem with `##Header 4`, or
-- Use the / command like so: `/Header 4` (or `//Header 4`).
+- Tag a rem with `##Header X`, or
+- Use the / command like so: `/Header X` or `/hX` (or `//Header X` or `//hX`).
 
 ## Preview
 ![Preview 1](https://raw.githubusercontent.com/anishaaa1/Rainbow-Headers/main/src/media/rainbow-headers.png)
