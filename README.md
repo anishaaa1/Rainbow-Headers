@@ -12,13 +12,6 @@
 
 ### ✨ Features
 - Customizable header colors
-- 3 additional header sizes to work with
-
-### #️⃣ Additional Header Tags
-- `Header 4` _or simply_ `h4`
-- `Header 5` _or simply_ `h5`
-- `Header 6` _or simply_ `h5`
-> ⚡️ Thanks to `@coldenate` for suggesting the addition of quickcodes!  ⚡️
 
 ### 🎨 Default Colors
 | Header # | Hex Code |
@@ -29,10 +22,6 @@
 | Header 4 | `#A9DEF9` |
 | Header 5 | `#B0F2B4` |
 | Header 6 | `#FDE690` |
-
-### ❔ How to Use
-- Tag a rem with `##Header X`, or
-- Use the / command like so: `/Header X` or `/hX` (or `//Header X` or `//hX`).
 
 ### 👀 Preview
 <img src="https://raw.githubusercontent.com/anishaaa1/Rainbow-Headers/main/src/media/rainbow-headers.png" height="300px">
