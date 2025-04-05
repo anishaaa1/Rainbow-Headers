@@ -7,9 +7,9 @@
   "repoUrl": "https://github.com/anishaaa1/Rainbow-Headers",
   "manifestVersion": 1,
   "version": {
-    "major": 0,
+    "major": 1,
     "minor": 0,
-    "patch": 7
+    "patch": 0
   },
   "requestNative": false,
   "requiredScopes": [

@@ -1,63 +1,41 @@
 /* Header 1 */
-.rn-editor__rem__body__text--h1:not(.document-title) {
-	font-size: 1.98rem;
-	font-weight: 600;
-}
+.rn-editor__rem__body__text--h1:not(.document-title),
 .dark .rn-editor__rem__body__text--h1:not(.document-title) {
 	font-size: 1.98rem;
 	font-weight: 600;
 }
+
 /* Header 2 */
-.rn-editor__rem__body__text--h2:not(.document-title) {
-	font-size: 1.78rem;
-	font-weight: 600;
-}
+.rn-editor__rem__body__text--h2:not(.document-title),
 .dark .rn-editor__rem__body__text--h2:not(.document-title) {
 	font-size: 1.78rem;
 	font-weight: 600;
 }
+
 /* Header 3 */
-.rn-editor__rem__body__text--h3:not(.document-title) {
-	font-size: 1.58rem;
-	font-weight: 600;
-}
+.rn-editor__rem__body__text--h3:not(.document-title),
 .dark .rn-editor__rem__body__text--h3:not(.document-title) {
 	font-size: 1.58rem;
 	font-weight: 600;
 }
+
 /* Header 4 */
-[data-rem-tags~="header-4"] .rem-container {
-	--line-height: 24px;
-}
-[data-rem-tags~="header-4"] .rem-text {
+.rn-editor__rem__body__text--h4:not(.document-title),
+.dark .rn-editor__rem__body__text--h4:not(.document-title) {
 	font-size: 1.38rem;
 	font-weight: 550;
 }
-.dark [data-rem-tags~="header-4"] .rem-text {
-	font-size: 1.38rem;
-	font-weight: 550;
-}
+
 /* Header 5 */
-[data-rem-tags~="header-5"] .rem-container {
-	--line-height: 20px;
-}
-[data-rem-tags~="header-5"] .rem-text {
+.rn-editor__rem__body__text--h5:not(.document-title),
+.dark .rn-editor__rem__body__text--h5:not(.document-title) {
 	font-size: 1.22em;
 	font-weight: 550;
 }
-.dark [data-rem-tags~="header-5"] .rem-text {
-	font-size: 1.22em;
-	font-weight: 550;
-}
+
 /* Header 6 */
-[data-rem-tags~="header-6"] .rem-container {
-	--line-height: 16px;
-}
-[data-rem-tags~="header-6"] .rem-text {
-	font-size: 1.08rem;
-	font-weight: 550;
-}
-.dark [data-rem-tags~="header-6"] .rem-text {
+.rn-editor__rem__body__text--h6:not(.document-title),
+.dark .rn-editor__rem__body__text--h6:not(.document-title) {
 	font-size: 1.08rem;
 	font-weight: 550;
 }
